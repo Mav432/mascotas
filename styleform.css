@@ -1,99 +1,31 @@
-.perrito{
-    width: 140px;
-}
-.div_header {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
 
-.div_header a {
-    text-decoration: none;
-    color: black;
-}
-.header_main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 20px;
-    background-color: #effb0493;
-}
-.butt{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:medium;
-    background-color: #f79504;
-    border-radius: 15px;
-    height: 50px;
-    border: #D0D0D0;
-}
+.forml {
+    background-image: url(/images/05.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
-
-.cont {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px;
-    font-size: 50px;
 }
-
-/*Estilos para las imgenes ------------------------------------------------>*/
-.slider-frame{
-    width: 1280px;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-.slider-frame ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 10s infinite alternate ease-in-out;
-}
-.slider-frame li{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-}
-.slider-frame img{
-    width: 100%;
-}
-.slider-frame li img{
-    width: 100%;
-    height: auto;
-}
-@keyframes slide{
-    0% {margin-left: 0}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100% ;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200% ;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
-
-
-.footer{
-    padding:50px;
-    text-align: center;
-}
-/* nav ------------------------------------------------------>>>>>>>>>>>>>>>>>>>>>*/
-
 
 .nav {
-    background-color: yellow;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px;
     display: flex;
     align-items: center;
 }
 
-.active-color{
-    background-color: #f79504;
+#rtn{
+    color: white;
+    width: 120px;
+    height: 50px;
 }
-/* login ----------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+.log{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -108,6 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 200px;
 }
 
 .form-content {
@@ -167,7 +100,7 @@ input::placeholder {
 }
 
 .input-field input {
-    width: 600px;
+    width: 400px;
 }
 
 form p {
@@ -217,10 +150,38 @@ form p a {
 }
 
 .input-group {
-    height: 250px;
+    height: 500px;
 }
 
 .btn-field button.disable {
     background-color: #EAEAEA;
     color: #2C2F35;
+}
+
+.btn{
+    background-color:orange;
+    color: white;
+    height: 50px;
+}
+
+form i {
+    padding-right: 15px;
+}
+/* Estilos para los campos válidos */
+form input:valid {
+    border: 2px solid green;
+}
+
+/* Estilos para los campos no válidos */
+form input:invalid {
+    border: 2px solid red;
+}
+
+/* Estilos para el botón */
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }

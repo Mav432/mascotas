@@ -26,10 +26,15 @@
     <div class="container">
 
         <div class="form-content">
-            <h1 id="title">Iniciar Sesion</h1>
+            <h1 id="title">Registrarse</h1>
             <form>
                 <div class="input-group ">
 
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre" required>
+                        
+                    </div>
 
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
@@ -39,19 +44,19 @@
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Contraseña" minlength="8" maxlength="15" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirmar Contraseña" minlength="8" maxlength="15" required>
                     </div><br>
 
-                        <p>Olvidaste tu Contraseña <a href="formrecuper.html">Click aqui</a></p>
                         
                     <div class="btn-field">
                         <button id="signUp" type="button" >Aceptar</button>
                         <button id="signIn" type="button" >Cancelar</button>
                     </div><br><br><br>
 
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <a class="btn" href="formregister.html">Registrate</a>
-
-                    </div>
                 </div>
             </form>
         </div>
