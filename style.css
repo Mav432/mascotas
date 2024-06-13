@@ -6,10 +6,28 @@
     font-size: 50px;
 }
 
-.div_header a {
+.nav-item a {
     text-decoration: none;
     color: black;
 }
+
+.log{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.btn{
+    background-color:orange;
+    color: white;
+    height: 45px;
+    width: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
 .header_main {
     display: flex;
     align-items: center;
